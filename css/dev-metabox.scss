@@ -1,0 +1,46 @@
+// html #jwr_server_data_dashboard_widget {
+html #dev-dashboard-widget-container{
+	* {
+		font-size: 1rem;
+	}
+
+	h3 {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 1rem 0 .25rem;
+	}
+
+	.data-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.jwr-plugins-section {
+		.plugin_name {
+			height: auto;
+			align-self: center;
+		}
+
+		.data-list {
+			grid-template-columns: 1fr;
+			// gap: .5em;
+
+			.plugin {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+
+	.plugin_button,
+	#debugging-toggle {
+		margin: .5em 0;
+		padding: .25em;
+		color: white;
+		background-color: #0073aa;
+
+		&:hover {
+			background-color: #0099ff;
+		}
+	}
+}
