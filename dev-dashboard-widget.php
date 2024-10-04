@@ -21,10 +21,7 @@ use dev_dashboard_widget\classes\Dev_Dashboard_Widget_Ajax;
 
 defined( 'ABSPATH' ) || exit;
 
-require_once __DIR__ . '/classes/class-dev-dashboard-widget.php';
-require_once __DIR__ . '/classes/class-debugging-status.php';
-require_once __DIR__ . '/classes/class-dev-dashboard-widget-ajax.php';
-require_once __DIR__ . '/classes/class-dev-logger.php';
+require_once __DIR__ . '/autoloader.php';
 
 add_action( 'wp_dashboard_setup', __NAMESPACE__ . '\\dashboard_setup' );
 add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\admin_enqueue_scripts', 10 );
